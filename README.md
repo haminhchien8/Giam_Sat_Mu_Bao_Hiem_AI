@@ -64,10 +64,10 @@ Luồng xử lý dữ liệu của hệ thống được tối ưu hóa theo mô
 ![Demo Giao Diện Streamlit](./giaodien.png)
 
 #### 2. Mô hình AI YOLOv8 phát hiện vi phạm
-![Demo Nhận Diện Mũ Bảo Hiểm](.nhandien.png)
+![Demo Nhận Diện Mũ Bảo Hiểm](./nhandien.png)
 
 #### 3. Thông báo tự động gửi về Telegram
-![Demo Cảnh Báo Telegram](.chatbot.png)
+![Demo Cảnh Báo Telegram](./chatbot.png)
 
 ---
 
