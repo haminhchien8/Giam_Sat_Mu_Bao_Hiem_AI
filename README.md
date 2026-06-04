@@ -40,7 +40,7 @@ Dự án tập trung xây dựng nền tảng thành phố thông minh với kh�
 ## 🏗️ Kiến trúc hệ thống
 
 <p align="center">
-    <img src="architecture.png" alt="Kiến trúc hệ thống Smart City" width="750"/>
+    <img src="sodo.png" alt="Kiến trúc hệ thống Smart City" width="750"/>
 </p>
 
 ---
