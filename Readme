@@ -1,56 +1,79 @@
-🏢 HỆ THỐNG GIÁM SÁT VÀ QUẢN LÝ ĐÔ THỊ THÔNG MINH (SMART CITY)
-TRƯỜNG ĐẠI HỌC ĐẠI NAM
+# 🛡️ HỆ THỐNG LƯU TRỮ VÀ XÁC THỰC VI PHẠM KHÔNG ĐỘI MŨ BẢO HIỂM
 
-KHOA CÔNG NGHỆ THÔNG TIN
+<div align="center">
 
-AloTLab - Faculty of Information Technology
+**TRƯỜNG ĐẠI HỌC ĐẠI NAM** **KHOA CÔNG NGHỆ THÔNG TIN** **AloTLab - Faculty of Information Technology**
 
-📝 Giới thiệu dự án
-Dự án tập trung vào việc kiến tạo giải pháp quản lý trực quan toàn diện cho các thành phố thông minh (Smart City) thông qua sự giao thoa giữa Trí tuệ nhân tạo (AI), IoT và Blockchain. Các chức năng cốt lõi bao gồm:
+---
 
-Giám sát mật độ và phân luồng giao thông tự động tại các nút giao trọng điểm bằng thị giác máy tính.
+[![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://www.python.org/)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange)](https://github.com/ultralytics/ultralytics)
+[![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red?logo=streamlit)](https://streamlit.io/)
+[![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum-blueviolet?logo=ethereum)](https://ethereum.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-Database-green?logo=sqlite)](https://www.sqlite.org/)
 
-Mã hóa và lưu băm SHA-256 toàn bộ nhật ký an ninh, thông tin chứng cứ vi phạm và dữ liệu cảm biến IoT môi trường để tạo dấu vết số không thể thay đổi.
+</div>
 
-Xác thực tính toàn vẹn của dữ liệu đô thị theo thời gian thực, ngăn chặn tuyệt đối các hành vi xâm nhập, chỉnh sửa tệp tin bằng chứng an ninh.
+<h3 align="center">🚦 Giải pháp phát hiện và xác thực vi phạm giao thông bằng AI và Blockchain</h3>
 
-Tối ưu hóa năng lực quản lý hành chính và nâng cao tính minh bạch cho quy trình vận hành và xử phạt của đô thị.
+<p align="center">
+<strong>
+Hệ thống sử dụng mô hình YOLOv8 để phát hiện người điều khiển xe máy không đội mũ bảo hiểm từ hình ảnh và video. Dữ liệu vi phạm được lưu trữ bằng SQLite, tạo mã băm SHA-256 và xác thực trên Blockchain nhằm đảm bảo tính toàn vẹn, minh bạch và chống giả mạo bằng chứng vi phạm.
+</strong>
+</p>
 
-🏗️ Kiến trúc dự án
-✨ Tính năng chính
-🧠 Trí tuệ nhân tạo & Thị giác máy tính (AI & Computer Vision)
-Phân loại đa đối tượng phương tiện giao thông (Xe máy, ô tô, xe tải, xe buýt) để đánh giá lưu lượng đô thị.
+---
 
-Tự động nhận diện hành vi vi phạm trật tự an toàn giao thông đô thị (Không đội mũ bảo hiểm, vượt đèn đỏ, lấn làn).
+## 📝 Giới thiệu dự án
 
-Xử lý luồng dữ liệu camera giám sát trực tiếp (RTSP Stream) với tốc độ suy luận siêu việt nhờ tối ưu hóa phần cứng nhúng.
+Dự án tập trung vào việc xác thực và bảo vệ tính toàn vẹn của ảnh vi phạm bằng công nghệ Blockchain kết hợp mã băm SHA-256. Các chức năng cốt lõi bao gồm:
+* **Lưu mã băm SHA-256** của ảnh vi phạm gốc để tạo dấu vết số cố định.
+* **Xác thực tính toàn vẹn** dữ liệu nhanh chóng và trực quan ngay trên giao diện Web.
+* **Phát hiện ảnh bị chỉnh sửa** hoặc các hành vi làm sai lệch, giả mạo bằng chứng.
+* **Nâng cao tính minh bạch** và độ tin cậy tuyệt đối cho quy trình xử lý vi phạm giao thông.
 
-🔐 IoT Môi trường & Blockchain Security
-Thu thập dữ liệu thời gian thực từ các trạm cảm biến IoT (Chất lượng không khí AQI, nhiệt độ, độ ẩm, mức độ ngập lụt) qua giao thức MQTT.
+---
 
-Tương tác trực tiếp với Smart Contract (Hợp đồng thông minh) trên mạng EVM Testnet để lưu trữ Proof of Existence (Bằng chứng tồn tại) cho dữ liệu an ninh đô thị.
+## 🏗️ Porter dự án
 
-Cơ chế đối sánh phi tập trung cảnh báo ngay lập tức nếu dữ liệu camera giám sát hoặc cảm biến bị can thiệp trái phép.
 
-📊 Trung tâm Điều hành Trực quan (Dashboard)
-Trang tổng quan quản lý đô thị tập trung xây dựng trên nền tảng Web, hỗ trợ bộ lọc tìm kiếm thông minh theo khu vực địa lý hoặc mã giao dịch Blockchain.
 
-Biểu đồ trực quan hóa dữ liệu theo thời gian thực (Real-time charts) giúp dự báo ùn tắc giao thông và ô nhiễm môi trường để đưa ra quyết định điều phối kịp thời.
+<p align="center">
+  <img src="Porter.png" alt="Kiến trúc hệ thống và Giao diện" width="750"/>
+</p>
 
-📱 Cảnh báo Khẩn cấp 24/7
-Tự động phát tín hiệu cảnh báo đến các cơ quan chức năng hoặc ban quản lý đô thị qua Telegram Bot API khi xảy ra sự cố đột xuất (Tai nạn giao thông, ùn tắc kéo dài, chỉ số ô nhiễm vượt ngưỡng nguy hiểm).
 
-🔧 Công nghệ sử dụng
-Ngôn ngữ lập trình: Python (Xử lý cốt lõi, điều phối pipeline dữ liệu AI và Web3)
 
-Trí tuệ nhân tạo: Ultralytics YOLOv11, OpenCV, PyTorch
+## ✨ Tính năng chính
 
-Hạ tầng IoT: MQTT Broker (Mosquitto), Node-RED
+### 🧠 Trí tuệ nhân tạo (Computer Vision)
+* Phát hiện chính xác người đội mũ bảo hiểm và không đội mũ bảo hiểm.
+* Xử lý mượt mà trên cả hình ảnh tĩnh và luồng video tải lên.
+* Hỗ trợ nhận diện, khoanh vùng nhiều đối tượng (Multi-object) cùng lúc với độ tin cậy ($Confidence$) cao.
 
-Giao diện ứng dụng: Streamlit / ReactJS Framework
+### 🔐 Blockchain & Bảo mật dữ liệu
+* Băm ảnh bằng chứng theo chuẩn công nghiệp **SHA-256**.
+* Tương tác với Smart Contract để lưu trữ dấu vết điện tử (Proof of Existence) trên Blockchain.
+* Cơ chế đối sánh mã băm hỗ trợ phát hiện ngay lập tức nếu dữ liệu ảnh bị thay đổi dù chỉ 1 pixel.
 
-Cơ sở dữ liệu: SQLite / PostgreSQL (Lưu trữ trạng thái đô thị)
+### 📊 Quản lý & Thống kê
+* Quản lý danh sách vi phạm tập trung, bộ lọc tìm kiếm thông minh theo mã băm SHA-256.
+* Biểu đồ cột trực quan theo dõi biến động số ca vi phạm theo các mốc thời gian trong ngày.
 
-Nền tảng Blockchain: Ethereum / Polygon Network, Web3.py
+### 📱 Thông báo tức thời
+* Bắn thông báo tự động thông qua **Telegram Bot** gồm: *Ảnh chụp vi phạm*, *Mã băm SHA-256* và *Mã hash giao dịch (TxHash)* trên Blockchain.
 
-Hệ thống truyền thông: Telegram Bot API, Webhook Cảnh báo
+---
+
+## 🔧 Công nghệ sử dụng
+
+* **Ngôn ngữ lập trình:** Python (xử lý logic AI, Backend và tương tác Web3)
+* **Trí tuệ nhân tạo:** Ultralytics YOLOv8, OpenCV
+* **Giao diện ứng dụng:** Streamlit
+* **Cơ sở dữ liệu:** SQLite
+* **Nền tảng Blockchain:** Ethereum Network, Web3.py
+* **Giao tiếp & Cảnh báo:** Telegram Bot API
+
+---
+
+
