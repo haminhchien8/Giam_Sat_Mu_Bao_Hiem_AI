@@ -90,7 +90,7 @@ smart-city-monitoring/
 │
 ├── requirements.txt        # Các thư viện cần thiết cho dự án
 └── README.md
-
+```
 
 ---
 
