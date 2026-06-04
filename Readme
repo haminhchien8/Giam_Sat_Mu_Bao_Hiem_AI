@@ -1,1 +1,56 @@
+🏢 HỆ THỐNG GIÁM SÁT VÀ QUẢN LÝ ĐÔ THỊ THÔNG MINH (SMART CITY)
+TRƯỜNG ĐẠI HỌC ĐẠI NAM
 
+KHOA CÔNG NGHỆ THÔNG TIN
+
+AloTLab - Faculty of Information Technology
+
+📝 Giới thiệu dự án
+Dự án tập trung vào việc kiến tạo giải pháp quản lý trực quan toàn diện cho các thành phố thông minh (Smart City) thông qua sự giao thoa giữa Trí tuệ nhân tạo (AI), IoT và Blockchain. Các chức năng cốt lõi bao gồm:
+
+Giám sát mật độ và phân luồng giao thông tự động tại các nút giao trọng điểm bằng thị giác máy tính.
+
+Mã hóa và lưu băm SHA-256 toàn bộ nhật ký an ninh, thông tin chứng cứ vi phạm và dữ liệu cảm biến IoT môi trường để tạo dấu vết số không thể thay đổi.
+
+Xác thực tính toàn vẹn của dữ liệu đô thị theo thời gian thực, ngăn chặn tuyệt đối các hành vi xâm nhập, chỉnh sửa tệp tin bằng chứng an ninh.
+
+Tối ưu hóa năng lực quản lý hành chính và nâng cao tính minh bạch cho quy trình vận hành và xử phạt của đô thị.
+
+🏗️ Kiến trúc dự án
+✨ Tính năng chính
+🧠 Trí tuệ nhân tạo & Thị giác máy tính (AI & Computer Vision)
+Phân loại đa đối tượng phương tiện giao thông (Xe máy, ô tô, xe tải, xe buýt) để đánh giá lưu lượng đô thị.
+
+Tự động nhận diện hành vi vi phạm trật tự an toàn giao thông đô thị (Không đội mũ bảo hiểm, vượt đèn đỏ, lấn làn).
+
+Xử lý luồng dữ liệu camera giám sát trực tiếp (RTSP Stream) với tốc độ suy luận siêu việt nhờ tối ưu hóa phần cứng nhúng.
+
+🔐 IoT Môi trường & Blockchain Security
+Thu thập dữ liệu thời gian thực từ các trạm cảm biến IoT (Chất lượng không khí AQI, nhiệt độ, độ ẩm, mức độ ngập lụt) qua giao thức MQTT.
+
+Tương tác trực tiếp với Smart Contract (Hợp đồng thông minh) trên mạng EVM Testnet để lưu trữ Proof of Existence (Bằng chứng tồn tại) cho dữ liệu an ninh đô thị.
+
+Cơ chế đối sánh phi tập trung cảnh báo ngay lập tức nếu dữ liệu camera giám sát hoặc cảm biến bị can thiệp trái phép.
+
+📊 Trung tâm Điều hành Trực quan (Dashboard)
+Trang tổng quan quản lý đô thị tập trung xây dựng trên nền tảng Web, hỗ trợ bộ lọc tìm kiếm thông minh theo khu vực địa lý hoặc mã giao dịch Blockchain.
+
+Biểu đồ trực quan hóa dữ liệu theo thời gian thực (Real-time charts) giúp dự báo ùn tắc giao thông và ô nhiễm môi trường để đưa ra quyết định điều phối kịp thời.
+
+📱 Cảnh báo Khẩn cấp 24/7
+Tự động phát tín hiệu cảnh báo đến các cơ quan chức năng hoặc ban quản lý đô thị qua Telegram Bot API khi xảy ra sự cố đột xuất (Tai nạn giao thông, ùn tắc kéo dài, chỉ số ô nhiễm vượt ngưỡng nguy hiểm).
+
+🔧 Công nghệ sử dụng
+Ngôn ngữ lập trình: Python (Xử lý cốt lõi, điều phối pipeline dữ liệu AI và Web3)
+
+Trí tuệ nhân tạo: Ultralytics YOLOv11, OpenCV, PyTorch
+
+Hạ tầng IoT: MQTT Broker (Mosquitto), Node-RED
+
+Giao diện ứng dụng: Streamlit / ReactJS Framework
+
+Cơ sở dữ liệu: SQLite / PostgreSQL (Lưu trữ trạng thái đô thị)
+
+Nền tảng Blockchain: Ethereum / Polygon Network, Web3.py
+
+Hệ thống truyền thông: Telegram Bot API, Webhook Cảnh báo
