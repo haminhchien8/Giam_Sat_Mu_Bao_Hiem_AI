@@ -1,43 +1,56 @@
-# 🏢 HỆ THỐNG GIÁM SÁT VÀ QUẢN LÝ ĐÔ THỊ THÔNG MINH (SMART CITY)
-
+🌆 HỆ THỐNG GIÁM SÁT VÀ PHÂN TÍCH DỮ LIỆU THÀNH PHỐ THÔNG MINH
 <div align="center">
 
-**TRƯỜNG ĐẠI HỌC ĐẠI NAM**  
-**KHOA CÔNG NGHỆ THÔNG TIN**  
-*AloTLab - Faculty of Information Technology*
+TRƯỜNG ĐẠI HỌC ĐẠI NAM KHOA CÔNG NGHỆ THÔNG TIN AloTLab - Faculty of Information Technology
 
----
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)](https://www.python.org/)
-[![YOLOv11](https://img.shields.io/badge/YOLOv11-Ultralytics-orange?style=for-the-badge&logo=ultralytics)](https://github.com/ultralytics/ultralytics)
-[![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-red?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Blockchain](https://img.shields.io/badge/Blockchain-Ethereum-blueviolet?style=for-the-badge&logo=ethereum)](https://ethereum.org/)
-[![IoT](https://img.shields.io/badge/IoT-MQTT--NodeRED-green?style=for-the-badge&logo=nodered)](https://nodered.org/)
 
-<h4>🚦 Giải pháp quản lý hạ tầng giao thông và an ninh đô thị bằng hệ sinh thái AIoT & Blockchain</h4>
 
-</div>
 
----
 
-## 📝 Giới thiệu dự án
 
-Dự án tập trung vào việc kiến tạo giải pháp quản lý trực quan toàn diện cho các thành phố thông minh (**Smart City**) thông qua sự giao thoa mạnh mẽ giữa **Trí tuệ nhân tạo (AI)**, **Internet vạn vật (IoT)** và công nghệ **Blockchain**. 
 
-Các chức năng cốt lõi của hệ thống bao gồm:
-* **Thị giác máy tính:** Giám sát mật độ và điều phối, phân luồng giao thông tự động tại các nút giao thông đô thị trọng điểm.
-* **Mã băm an toàn:** Mã hóa và lưu băm theo chuẩn công nghiệp **SHA-256** toàn bộ nhật ký an ninh, thông tin chứng cứ vi phạm và dữ liệu cảm biến IoT môi trường nhằm tạo ra dấu vết số cố định.
-* **Xác thực toàn vẹn:** Kiểm tra tính toàn vẹn của dữ liệu đô thị theo thời gian thực ($Real-time$), ngăn chặn tuyệt đối các hành vi xâm nhập, thay đổi hoặc làm sai lệch tệp tin bằng chứng an ninh.
-* **Minh bạch hóa hành chính:** Tối ưu hóa năng lực quản lý hành chính đô thị và nâng cao tính minh bạch, khách quan cho quy trình vận hành, xử phạt nguội.
 
----
 
-## 🏗️ Kiến trúc dự án
+</div> <h3 align="center">🚦 Giải pháp giám sát đô thị thông minh ứng dụng AI, IoT và phân tích dữ liệu thời gian thực</h3> <p align="center"> <strong> Hệ thống Smart City sử dụng AI và IoT để thu thập, phân tích và trực quan hóa dữ liệu đô thị như giao thông, môi trường, an ninh và dân cư. Dữ liệu được xử lý theo thời gian thực nhằm hỗ trợ ra quyết định, tối ưu quản lý đô thị và nâng cao chất lượng cuộc sống. </strong> </p>
+📝 Giới thiệu dự án
 
-```text
- 📸 Camera Giám Sát (RTSP) ───► [ AI Pipeline: YOLOv11 ] ──┐
-                                                            ├─► [ SQLite / PostgreSQL ]
- 📡 Cảm Biến IoT (MQTT)    ───► [ IoT Gateway: Node-RED ] ──┘          │
-                                                                        ▼
- 📱 Telegram Bot API       ◄─── [ Hệ Thống Cảnh Báo 24/7 ] ◄─── [ Web3.py / Smart Contract ]
+Dự án tập trung xây dựng nền tảng thành phố thông minh với khả năng giám sát và phân tích dữ liệu đô thị theo thời gian thực. Các chức năng cốt lõi bao gồm:
+
+Thu thập dữ liệu IoT từ cảm biến giao thông, môi trường và camera giám sát.
+Phân tích dữ liệu thời gian thực nhằm phát hiện bất thường trong đô thị.
+Trực quan hóa dữ liệu giúp cơ quan quản lý dễ dàng theo dõi tình trạng thành phố.
+Hỗ trợ ra quyết định thông minh dựa trên dữ liệu và AI.
+Tích hợp cảnh báo tự động khi phát hiện sự cố (ùn tắc, ô nhiễm, tai nạn).
+🏗️ Kiến trúc hệ thống
+<p align="center"> <img src="architecture.png" alt="Kiến trúc hệ thống Smart City" width="750"/> </p>
+✨ Tính năng chính
+🧠 Trí tuệ nhân tạo (AI & Computer Vision)
+Phát hiện phương tiện giao thông, người đi bộ từ camera đô thị.
+Nhận diện ùn tắc giao thông theo thời gian thực.
+Phân tích hành vi và mật độ dân cư tại các khu vực trọng điểm.
+📡 IoT & Thu thập dữ liệu
+Thu thập dữ liệu từ cảm biến môi trường (CO2, bụi mịn, nhiệt độ).
+Kết nối thiết bị IoT trong hệ thống giao thông thông minh.
+Đồng bộ dữ liệu liên tục về server trung tâm.
+📊 Phân tích & Trực quan hóa dữ liệu
+Dashboard theo dõi tình trạng giao thông theo thời gian thực.
+Biểu đồ thống kê chất lượng không khí theo khu vực.
+Báo cáo xu hướng đô thị theo ngày/tuần/tháng.
+🚨 Cảnh báo thông minh
+Cảnh báo ùn tắc giao thông tự động.
+Thông báo ô nhiễm môi trường vượt ngưỡng.
+Gửi thông báo tới hệ thống quản lý hoặc người dân.
+🔧 Công nghệ sử dụng
+Ngôn ngữ lập trình: Python (xử lý AI, backend)
+Trí tuệ nhân tạo: YOLO, OpenCV, TensorFlow
+Giao diện ứng dụng: Streamlit / Web Dashboard
+Cơ sở dữ liệu: SQLite / PostgreSQL
+IoT: MQTT, cảm biến môi trường, thiết bị thông minh
+Phân tích dữ liệu: Pandas, NumPy, Matplotlib, Seaborn
+Hệ thống cảnh báo: API Notification / Telegram Bot
+📌 Hướng phát triển tương lai
+Tích hợp bản đồ GIS để hiển thị dữ liệu trực quan theo vị trí.
+Ứng dụng AI dự đoán ùn tắc giao thông theo khung giờ.
+Mở rộng hệ thống camera AI toàn thành phố.
+Tích hợp với hệ thống điều khiển đèn giao thông tự động.
