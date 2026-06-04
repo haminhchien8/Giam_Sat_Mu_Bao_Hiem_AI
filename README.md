@@ -70,7 +70,7 @@ Dự án tập trung xây dựng nền tảng thành phố thông minh với kh�
 
 ## 📁 Cấu trúc thư mục dự án
 
-text
+```text
 smart-city-monitoring/
 │
 ├── ai_modules/             # Các module xử lý thị giác máy tính (YOLO, OpenCV)
@@ -90,7 +90,6 @@ smart-city-monitoring/
 │
 ├── requirements.txt        # Các thư viện cần thiết cho dự án
 └── README.md
-
 
 
 ---
