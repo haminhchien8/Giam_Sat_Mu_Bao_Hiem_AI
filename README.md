@@ -58,6 +58,16 @@ Luồng xử lý dữ liệu của hệ thống được tối ưu hóa theo mô
 | **🚨 Hệ thống cảnh báo Telegram** | Tích hợp **Telegram Bot API** để tự động hóa quy trình báo động khẩn cấp.Hệ thống gửi tin nhắn bao gồm thông tin chi tiết (Thời gian, Vị trí camera) và **đính kèm trực tiếp file ảnh vi phạm** về thiết bị của người quản lý chỉ sau vài giây. |
 | **🖥️ Trung tâm điều hành (Web Dashboard)** | Xây dựng giao diện ứng dụng quản lý bằng framework **Streamlit** trực quan.**Trang Giám sát:** Hiển thị luồng camera AI đang phân tích trực tiếp.**Trang Quản lý:** Danh sách bộ lọc, tìm kiếm lịch sử vi phạm và vẽ biểu đồ thống kê xu hướng vi phạm theo thời gian. |
 
+### 📸 Hình ảnh Demo hệ thống
+
+#### 1. Giao diện điều hành trung tâm (Web Dashboard)
+![Demo Giao Diện Streamlit](./giaodien.png)
+
+#### 2. Mô hình AI YOLOv8 phát hiện vi phạm
+![Demo Nhận Diện Mũ Bảo Hiểm](.nhandien.png)
+
+#### 3. Thông báo tự động gửi về Telegram
+![Demo Cảnh Báo Telegram](.chatbot.png)
 ---
 
 ## 🔧 Công nghệ sử dụng
