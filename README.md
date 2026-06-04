@@ -1,8 +1,4 @@
 
-
-### 💾 Nội dung file `README.md` mới (Bạn chỉ cần copy toàn bộ phần dưới):
-
-```markdown
 # 🌆 HỆ THỐNG GIÁM SÁT VÀ PHÂN TÍCH DỮ LIỆU THÀNH PHỐ THÔNG MINH
 
 <div align="center">
@@ -74,7 +70,7 @@ Dự án tập trung xây dựng nền tảng thành phố thông minh với kh�
 
 ## 📁 Cấu trúc thư mục dự án
 
-```text
+text
 smart-city-monitoring/
 │
 ├── ai_modules/             # Các module xử lý thị giác máy tính (YOLO, OpenCV)
@@ -95,7 +91,7 @@ smart-city-monitoring/
 ├── requirements.txt        # Các thư viện cần thiết cho dự án
 └── README.md
 
-```
+
 
 ---
 
@@ -106,7 +102,7 @@ smart-city-monitoring/
 * [ ] Mở rộng quy mô, tối ưu hóa hiệu năng để kết nối hệ thống camera AI trên toàn thành phố.
 * [ ] Nghiên cứu tích hợp sâu với hệ thống điều khiển đèn giao thông tự động (Adaptive Traffic Light Control).
 
-```
+
 
 ### Các điểm cải tiến chính:
 1. **Dọn dẹp mã hiển thị:** Xóa bỏ hoàn toàn các khoảng trắng dư thừa trong thẻ `<div align="center">` giúp nội dung trên GitHub không bị đẩy xuống quá xa một cách bất thường.
@@ -115,4 +111,4 @@ smart-city-monitoring/
 4. **Bổ sung Cấu trúc thư mục mẫu:** Đối với một file `README.md` báo cáo đồ án hoặc dự án Lab, cấu trúc cây thư mục dạng vẽ text là bắt buộc phải có để thầy cô hoặc người thẩm định hiểu được cách tổ chức code của bạn.
 5. **Danh sách checkbox tiến độ (To-do list):** Phần định hướng tương lai được đổi thành các ô `- [ ]` chưa tích để thể hiện rõ đây là những tính năng đang và sẽ phát triển tiếp theo.
 
-```
+
