@@ -68,6 +68,7 @@ Luồng xử lý dữ liệu của hệ thống được tối ưu hóa theo mô
 
 #### 3. Thông báo tự động gửi về Telegram
 ![Demo Cảnh Báo Telegram](.chatbot.png)
+
 ---
 
 ## 🔧 Công nghệ sử dụng
