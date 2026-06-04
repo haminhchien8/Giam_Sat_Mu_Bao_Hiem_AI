@@ -1,5 +1,5 @@
 
-# 🌆 HỆ THỐNG GIÁM SÁT VÀ PHÂN TÍCH DỮ LIỆU THÀNH PHỐ THÔNG MINH
+# 🌆 HỆ THỐNG GIÁM SÁT GIAO THÔNG THÔNG MINH: PHÁT HIỆN VI PHẠM KHÔNG ĐỘI MŨ BẢO HIỂM
 
 <div align="center">
 
@@ -9,17 +9,17 @@
 
 ---
 
-### 🚦 Giải pháp giám sát đô thị thông minh ứng dụng AI, IoT và phân tích dữ liệu thời gian thực
+### 🚦 Giải pháp quản lý đô thị thông minh ứng dụng AI và Hệ thống cảnh báo tự động qua Telegram
 
 <p align="center">
-    <strong>Hệ thống Smart City sử dụng AI và IoT để thu thập, phân tích và trực quan hóa dữ liệu đô thị như giao thông, môi trường, an ninh và dân cư. Dữ liệu được xử lý theo thời gian thực nhằm hỗ trợ ra quyết định, tối ưu quản lý đô thị và nâng cao chất lượng cuộc sống.</strong>
+    <strong>Hệ thống là một phân hệ cốt lõi trong hạ tầng Thành phố thông minh (Smart City), sử dụng mô hình AI YOLOv8 để tự động giám sát, phát hiện các trường hợp người điều khiển xe máy không đội mũ bảo hiểm từ camera giao thông. Dữ liệu vi phạm sau đó được lưu trữ tập trung, hiển thị trực quan trên Web Dashboard và ngay lập tức gửi thông báo cảnh báo kèm hình ảnh bằng chứng về kênh Telegram của lực lượng chức năng theo thời gian thực.</strong>
 </p>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-v8_Ultralytics-FF6F00?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-FF6F00?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram_Bot-Notification-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-IoT_Protocol-660066?style=for-the-badge&logo=eclipse-mosquitto&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 </div>
 
@@ -27,87 +27,86 @@
 
 ## 📝 Giới thiệu dự án
 
-Dự án tập trung xây dựng nền tảng thành phố thông minh với khả năng giám sát và phân tích dữ liệu đô thị theo thời gian thực. Các chức năng cốt lõi bao gồm:
+Trong lộ trình xây dựng Thành phố thông minh, việc đảm bảo an toàn giao thông và tự động hóa quy trình giám sát là vô cùng cấp thiết. Dự án tập trung giải quyết bài toán tự động phát hiện hành vi vi phạm không đội mũ bảo hiểm kết hợp cảnh báo tức thời với các mục tiêu chính:
 
-*   **Thu thập dữ liệu IoT** từ cảm biến giao thông, môi trường và camera giám sát.
-*   **Phân tích dữ liệu thời gian thực** nhằm phát hiện các hiện tượng bất thường trong đô thị.
-*   **Trực quan hóa dữ liệu** thông qua Dashboard giúp cơ quan quản lý dễ dàng theo dõi tình trạng tổng quan.
-*   **Hỗ trợ ra quyết định thông minh** dựa trên các báo cáo phân tích từ dữ liệu và mô hình AI.
-*   **Tích hợp hệ thống cảnh báo tự động** ngay khi phát hiện sự cố (ùn tắc, ô nhiễm, tai nạn).
-
----
-
-## 🏗️ Kiến trúc hệ thống
-
-<p align="center">
-    <img src="sodo.png" alt="Kiến trúc hệ thống Smart City" width="750"/>
-</p>
+* **Giám sát tự động 24/7:** Thay thế phương pháp tuần tra truyền thống bằng hệ thống camera AI tự động quét và phân tích luồng giao thông liên tục.
+* **Trích xuất bằng chứng số:** Tự động chụp ảnh vi phạm, khoanh vùng đối tượng (xe máy, người lái, đầu không có mũ) và ghi nhận chính xác thời gian, vị trí vi phạm.
+* **Cảnh báo tức thời qua Telegram:** Ngay khi phát hiện vi phạm, hệ thống sử dụng Telegram Bot API để tự động gửi thông tin chi tiết kèm hình ảnh bằng chứng trực tiếp về nhóm chat điều hành của lực lượng chức năng.
+* **Dashboard điều hành trực quan:** Cung cấp giao diện trung tâm cho cơ quan quản lý đô thị theo dõi thống kê số ca vi phạm theo ngày/giờ/tuyến đường.
 
 ---
 
-## ✨ Tính năng chính
+## 🏗️ Sơ đồ khối hệ thống
 
-| Phân hệ | Mô tả chi tiết tính năng |
-| :--- | :--- |
-| **🧠 Trí tuệ nhân tạo (AI & Computer Vision)** | <ul><li>Phát hiện phương tiện giao thông và người đi bộ chuẩn xác từ camera đô thị.</li><li>Nhận diện và đánh giá mức độ ùn tắc giao thông theo thời gian thực.</li><li>Phân tích hành vi, mật độ dân cư tại các khu vực trọng điểm.</li></ul> |
-| **📡 IoT & Thu thập dữ liệu** | <ul><li>Thu thập dữ liệu môi trường (khí CO2, bụi mịn PM2.5, nhiệt độ, độ ẩm).</li><li>Kết nối và quản lý các thiết bị IoT trong hệ sinh thái giao thông thông minh.</li><li>Đồng bộ và truyền tải dữ liệu liên tục về server trung tâm qua giao thức MQTT.</li></ul> |
-| **📊 Phân tích & Trực quan hóa** | <ul><li>Bảng điều khiển (Dashboard) theo dõi tình trạng giao thông trực quan theo thời gian thực.</li><li>Biểu đồ thống kê và đánh giá xu hướng chất lượng không khí theo từng khu vực.</li><li>Xuất báo cáo phân tích xu hướng biến động đô thị theo ngày/tuần/tháng.</li></ul> |
-| **🚨 Cảnh báo thông minh** | <ul><li>Tự động đưa ra cảnh báo ùn tắc giao thông tại các nút giao.</li><li>Phát tín hiệu thông báo khi chỉ số ô nhiễm môi trường vượt ngưỡng an toàn.</li><li>Gửi thông báo tức thời tới hệ thống quản lý hoặc ứng dụng của người dân.</li></ul> |
+Luồng xử lý dữ liệu của hệ thống được tối ưu hóa theo mô hình thu thập, xử lý tập trung và phân phối hiển thị kết hợp báo động:
+
+```text
+                                                 ┌──> [ Cơ Sở Dữ Liệu SQLite ] ──> [ Dashboard Streamlit ]
+[ Camera Giám Sát ] ──> ( Xử lý AI: YOLOv8 ) ──┤
+                                                 └──> ( Module Telegram Bot )   ──> [ 📱 Tin nhắn thông báo khẩn cấp ]
+
+```
+
+---
+
+## ✨ Tính năng chính của các phân hệ
+
+| Phân hệ chức năng | Mô tả chi tiết kỹ thuật |
+| --- | --- |
+| **🧠 Trí tuệ nhân tạo (AI & Computer Vision)** | Tích hợp mô hình **YOLOv8** nhận diện cấu trúc: Xe máy $\rightarrow$ Người điều khiển $\rightarrow$ Trạng thái đầu (Có/Không đội mũ).Thuật toán xử lý ảnh **OpenCV** giúp bóc tách và tự động cắt (Crop) khung ảnh bằng chứng vi phạm đạt độ nét cao. |
+| **📊 Cơ sở dữ liệu (Local Storage)** | Sử dụng cơ sở dữ liệu **SQLite** để tổ chức lưu trữ thông tin vi phạm khoa học.Quản lý thông tin bao gồm: ID vi phạm, thời gian, tuyến đường/vị trí camera, và đường dẫn ảnh bằng chứng gốc. |
+| **🚨 Hệ thống cảnh báo Telegram** | Tích hợp **Telegram Bot API** để tự động hóa quy trình báo động khẩn cấp.Hệ thống gửi tin nhắn bao gồm thông tin chi tiết (Thời gian, Vị trí camera) và **đính kèm trực tiếp file ảnh vi phạm** về thiết bị của người quản lý chỉ sau vài giây. |
+| **🖥️ Trung tâm điều hành (Web Dashboard)** | Xây dựng giao diện ứng dụng quản lý bằng framework **Streamlit** trực quan.**Trang Giám sát:** Hiển thị luồng camera AI đang phân tích trực tiếp.**Trang Quản lý:** Danh sách bộ lọc, tìm kiếm lịch sử vi phạm và vẽ biểu đồ thống kê xu hướng vi phạm theo thời gian. |
 
 ---
 
 ## 🔧 Công nghệ sử dụng
 
-*   **Ngôn ngữ lập trình:** Python (xử lý AI, phân tích dữ liệu và backend)
-*   **Trí tuệ nhân tạo:** YOLOv8, OpenCV, TensorFlow
-*   **Giao diện ứng dụng:** Streamlit / Web Dashboard
-*   **Cơ sở dữ liệu:** SQLite / PostgreSQL
-*   **Giao thức & IoT:** MQTT, cảm biến môi trường, thiết bị phần cứng thông minh
-*   **Phân tích dữ liệu:** Pandas, NumPy, Matplotlib, Seaborn
-*   **Hệ thống cảnh báo:** API Notification / Telegram Bot
+* **Ngôn ngữ lập trình:** Python 3.10+
+* **Mô hình nhận diện AI:** YOLOv8 (Ultralytics), OpenCV
+* **Hệ thống cảnh báo:** Telegram Bot API (`requests` / `telebot`)
+* **Giao diện Dashboard:** Streamlit UI Framework
+* **Cơ sở dữ liệu:** SQLite
+* **Thư viện phân tích dữ liệu:** Pandas, NumPy, Matplotlib (vẽ biểu đồ thống kê)
 
 ---
 
-## 📁 Cấu trúc thư mục dự án
+## 📁 Cấu trúc thư mục mã nguồn
 
 ```text
-smart-city-monitoring/
+smartcity-helmet-detection/
 │
-├── ai_modules/             # Các module xử lý thị giác máy tính (YOLO, OpenCV)
-│   ├── detection.py
-│   └── tracking.py
+├── ai_modules/             # Module xử lý camera và nhận diện AI
+│   ├── weights/            # Chứa file huấn luyện (.pt) của YOLOv8
+│   ├── helmet_detector.py  # Script chính chạy mô hình phát hiện vi phạm
+│   └── vision_utils.py     # Hàm bổ trợ cắt ảnh bằng chứng, vẽ khung bounding box
 │
-├── iot_modules/            # Module kết nối, thu thập dữ liệu cảm biến (MQTT)
-│   └── mqtt_client.py
+├── notify_modules/         # Module xử lý cảnh báo và thông báo
+│   └── telegram_bot.py     # Script cấu hình Bot Token, gửi text và hình ảnh vi phạm qua Telegram
 │
-├── app/                    # Mã nguồn giao diện Dashboard (Streamlit)
-│   ├── app.py
-│   └── views/
+├── app/                    # Trung tâm điều hành Web Dashboard (Streamlit)
+│   ├── main_app.py         # File khởi chạy ứng dụng chính
+│   └── pages/              # Các trang chức năng (Giám sát live, Lịch sử phạt nguội, Thống kê)
 │
-├── database/               # Cấu trúc và script khởi tạo cơ sở dữ liệu
-│   ├── db_manager.py
-│   └── models.py
+├── database/               # Quản lý lưu trữ cơ sở dữ liệu cục bộ
+│   ├── db_manager.py       # Script kết nối và thực thi các câu lệnh SQL (Insert, Select)
+│   └── violations.db       # File lưu trữ dữ liệu SQLite
 │
-├── requirements.txt        # Các thư viện cần thiết cho dự án
+├── data/                   # Thư mục lưu trữ hình ảnh
+│   └── evidence_images/    # Nơi lưu các bức ảnh bằng chứng vi phạm bị cắt từ camera
+│
+├── requirements.txt        # Các thư viện Python cần cài đặt (`pip install -r requirements.txt`)
 └── README.md
+
 ```
 
 ---
 
-## 📌 Hướng phát triển tương lai
+## 📌 Hướng phát triển tương lai trong hệ sinh thái Smart City
 
-* [ ] Tích hợp bản đồ hệ thống thông tin địa lý (GIS) để hiển thị dữ liệu trực quan theo vị trí thực tế.
-* [ ] Ứng dụng mô hình học máy nâng cao để dự đoán kịch bản ùn tắc giao thông theo từng khung giờ trong tuần.
-* [ ] Mở rộng quy mô, tối ưu hóa hiệu năng để kết nối hệ thống camera AI trên toàn thành phố.
-* [ ] Nghiên cứu tích hợp sâu với hệ thống điều khiển đèn giao thông tự động (Adaptive Traffic Light Control).
+* [ ] Tích hợp thêm module nhận diện biển số xe (ANPR) tự động từ vùng ảnh vi phạm để truy xuất thông tin chủ phương tiện, gửi kèm biên bản phạt nguội trực tiếp qua Telegram.
+* [ ] Kết nối hệ thống với bản đồ số GIS của thành phố để định vị trực quan vị trí các camera có tỷ lệ vi phạm cao.
+* [ ] Tối ưu hóa mô hình AI để có thể đóng gói triển khai trực tiếp lên các thiết bị phần cứng Edge AI nhỏ gọn (như Jetson Nano) đặt ngay tại cột đèn giao thông.
 
-
-
-### Các điểm cải tiến chính:
-1. **Dọn dẹp mã hiển thị:** Xóa bỏ hoàn toàn các khoảng trắng dư thừa trong thẻ `<div align="center">` giúp nội dung trên GitHub không bị đẩy xuống quá xa một cách bất thường.
-2. **Thêm Badges công nghệ:** Tạo các thẻ công nghệ nhiều màu sắc (Python, YOLO, Streamlit, PostgreSQL, MQTT) bằng mã màu chuẩn, giúp bộ mã nguồn nhìn rất "pro" và bắt mắt ngay từ cái nhìn đầu tiên.
-3. **Sử dụng Bảng (Table) cho phần Tính năng:** Thay vì liệt kê danh sách gạch đầu dòng dài, việc đưa các phân hệ chính vào bảng giúp người xem dễ dàng tóm tắt và bao quát các module của hệ thống.
-4. **Bổ sung Cấu trúc thư mục mẫu:** Đối với một file `README.md` báo cáo đồ án hoặc dự án Lab, cấu trúc cây thư mục dạng vẽ text là bắt buộc phải có để thầy cô hoặc người thẩm định hiểu được cách tổ chức code của bạn.
-5. **Danh sách checkbox tiến độ (To-do list):** Phần định hướng tương lai được đổi thành các ô `- [ ]` chưa tích để thể hiện rõ đây là những tính năng đang và sẽ phát triển tiếp theo.
-
+```
 
